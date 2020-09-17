@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.home.HomeFragment">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="238dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="31dp"
+        android:autofillHints="@string/search"
+        android:background="@drawable/card_background"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ru.nikartm.support.ImageBadgeView
+        android:id="@+id/notification_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_notification"
+        app:ibv_badgeBackground="@drawable/badge_background"
+        app:ibv_badgePosition="bottom_right"
+        app:ibv_badgeTextColor="@color/badge_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toEndOf="@+id/searchEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/hello_username"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/eat_que"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/favourite"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/options_background"
+                android:contentDescription="@string/favorite"
+                android:elevation="10dp"
+                android:src="@drawable/ic_heart_favourite_like"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:padding="8dp"
+                android:text="@string/favorite"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="259dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/priceTag"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/options_background"
+                android:contentDescription="@string/cheap"
+                android:elevation="10dp"
+                android:src="@drawable/ic_tag"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/cheap_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:padding="8dp"
+                android:text="@string/cheap"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="259dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/trend"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/options_background"
+                android:contentDescription="@string/trend"
+                android:elevation="10dp"
+                android:src="@drawable/ic_trending_up"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/trend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:padding="8dp"
+                android:text="@string/trend"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="259dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:background="@drawable/options_background"
+                android:contentDescription="@string/more"
+                android:elevation="10dp"
+                android:src="@drawable/ic_dots_24px"
+                android:tint="@color/card_background_color"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <TextView
+                android:id="@+id/more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:padding="8dp"
+                android:text="@string/more"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="259dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/todayPromoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/today_s_promo"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/seeAll"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/seeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/poppins"
+        android:text="See all"
+        android:textColor="@color/badge_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todayPromoRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayPromoText"
+        tools:listitem="@layout/todaypromo_recyclerview" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

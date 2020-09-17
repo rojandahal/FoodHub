@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E84C4F</color>
+    <color name="colorPrimaryDark">#F44336</color>
+    <color name="background">#F8F5F2</color>
+    <color name="badge_color">#EDA345</color>
+    <color name="primaryTextColor">#3E4462</color>
+    <color name="secondaryTextColor">#7E7E7E</color>
+    <color name="white">#FFFF</color>
+    <color name="card_background_color">#19E84C4F</color>
+    <color name="red">#F72617</color>
+    <color name="code_background">#FFFF</color>
+    <color name="grey">#FFC6C1C1</color>
+    <color name="black">#000000</color>
+</resources>
